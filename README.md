@@ -9,7 +9,9 @@ rock paper scissors-rishabh
 txt2speech-rishabh
 tictactoe-rishabh
 UNO-rishabh
-
+timeline-rishabh
+morse-rishabh
+life-rishabh
 pls add ur names along with ur program name in this readme
 
 
