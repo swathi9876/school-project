@@ -9,7 +9,8 @@ hangman finlal 24 - somesh jadhwani
 UNO-RISHABH
 MORSE-RISHABH
 FIFA-HAGAN BASHEER
-
+Morse code-Akshat Singh
+Menu Card-Akshat Singh
 
 
 
