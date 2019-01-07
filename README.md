@@ -14,6 +14,7 @@ Menu Card-Akshat Singh,
 Rock,Paper Scissors-Utsav Doshi, 
 Password Generator-Utsav Doshi
 
+HANGMAN-Ashutosh Bhutada
 
 
 
