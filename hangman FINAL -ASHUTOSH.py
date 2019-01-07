@@ -110,12 +110,13 @@ while wrong<5 and '_' in l1:
             ind=l2.index(letter)
             l1[ind]=letter
             print()
-            lll=l2[ind+1:]
+            
             for z in range(5):
+                lll=l2[ind+1:]
                 if letter in lll:
                     ind1=lll.index(letter)
-                    ind2=ind1+ind+1
-                    l1[ind2]=letter
+                    ind=ind1+ind+1
+                    l1[ind]=letter
             
         else:
             wrong=wrong+1
@@ -143,7 +144,7 @@ while wrong<5 and '_' in l1:
 if wrong==5:            
     print()
     print(hang5)
-    print("GAME OVER-----WRONG GUESS-----YOU KILLED THE MAN")
+    print("GAME OVER-----WRONG GUESS-----YOU KILLED THE MAN---THE WORD IS",word)
     print(hang5)
 else:
     print('CONGRATULATIONS PLAYER-----YOU GUESSED IT RIGHT AND SAVED THE MAN----THE WORD IS',word)         
