@@ -713,7 +713,7 @@ if a==2:
 if a==3:
   pass
 print("Game Exited Thank You!! for playing")            
-        
+print("Game made by Kingshuk")        
         
 
 
