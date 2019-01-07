@@ -95,7 +95,7 @@ wrong=0
 m=''
 while wrong<5 and '_' in l1:
     f=input('PRESS w TO GUESS THE ENTIRE WORD OR l TO GUESS A SINGLE LETTER       ')
-    if f=='w':
+    if f=='w' or f=='W':
         wordd=input('ENTER A WORD     ')
         if wordd==word:
             wrong=1
