@@ -3,7 +3,7 @@ from colorama import Fore,Style
 import random
 import matplotlib.pyplot as plt
 SaLdic={2:38,16:6,7:14,8:31,15:26,21:42,28:84,36:44,46:25,49:11,51:67,62:19,64:60,71:91,74:53,78:98,87:94,89:68,92:88,95:75,99:80}
-colors=['b','g','r','c','m','y','k','w']
+colors=['b','g','r','c','m','y','k']
 def showgrid():
     for i in SaLdic:
         if i==99 or i==64:
@@ -16,12 +16,12 @@ def showgrid():
         if val>i:
             col='g'
         else:
-            col='y'
+            col='m'
         plt.plot(x,y,c=col)
-    plt.plot([80,90],[90,70],c='y')
-    plt.plot([30,90],[60,50],c='y')
+    plt.plot([80,90],[90,70],c='m')
+    plt.plot([30,90],[60,50],c='m')
     plt.title('(っ◔◡◔)っ ♥ Snakes and Ladders ♥')
-    print('Green:Ladders\nYellow:Snakes')
+    print('Green:Ladders\nMagenta:Snakes')
     for j in range(11):
         x=[(j*10)-5 for i in range(11)]
         y=[10*i-5 for i in range(11)]
@@ -35,14 +35,22 @@ showgrid()
 plt.show() 
 gamewin=False
 incorrect=True
+higher=False
 while incorrect:
     try:
-        player_num=int(input('Enter number of players(minimum 2):'))
-        if player_num<=1:
-            player_num=int(input('Enter number of players again..You cant possibly be so lonely:')) 
+        player_num=int(input('Enter number of players(minimum 2 and maximum 7):'))
+        if player_num<=1 or player_num>7:
+            
+            print('Enter number of players again..You crossed the limit when it was clearly displayed YOU DOLT!')
+            higher=True
+            p=int('a')
         incorrect=False
     except:
-        print('Not  a number')
+        if higher:
+            print()
+            higher=False
+        else:
+            print('Not a number')
         incorrect=True
 player_names=[]
 for i in range(player_num):
@@ -86,7 +94,7 @@ while not gamewin:
         elif newpos in SaLdic:
              print(player_names[i],'rolled a ',roll,'and went to ',newpos,'and')
              if newpos>SaLdic[newpos]:
-                print(Fore.RED + player_names[i],'was bitten by a snake...')
+                print(Fore.MAGENTA + player_names[i],'was bitten by a snake...')
                 print(Style.RESET_ALL)
                 player_positions[i]=SaLdic[newpos]
                 print('New position of',player_names[i],'is',player_positions[i])
@@ -109,4 +117,4 @@ while not gamewin:
             plt.scatter(xc[j],yc[j],c=colors[j])
         plt.show()
 print('Bye have a great time')
-input()        
+input()
