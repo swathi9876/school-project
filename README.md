@@ -21,7 +21,7 @@ Password Generator-Utsav Doshi
 
 HANGMAN-Ashutosh Bhutada
 Project02-Anisha Katiyar
-Profect03-Anisha Katiyar
+Project03-Anisha Katiyar
 
 
 
