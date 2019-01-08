@@ -23,7 +23,8 @@ HANGMAN-Ashutosh Bhutada
 
 Project02-Anisha Katiyar
 Project03-Anisha Katiyar
-
+HANGMAN_AAYUSHR - Aayush Rajesh
+MASTERMIND_AAYUSHR - Aayush Rajesh
 
 
 
