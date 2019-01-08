@@ -68,8 +68,11 @@ dice=[1,2,3,4,5,6]
 while not gamewin:
    
     for i in range(player_num):
-        print('Press enter to roll')
-        input()
+        print('Press enter to roll or q to quit')
+        x=input()
+        if x=='q'or x=='Q':
+            gamewin=True
+            break
         roll=random.choice(dice)
         
         if roll==6:
